@@ -1,7 +1,9 @@
 **BookingRoom** est une plateforme web de réservation de salles d'événements avec authentification utilisateur, gestion de catalogue de salles et panel d'administration complet.
 
 ##  Schéma Base de Données
-src/main/resources/database/schema.sql    
+src/main/resources/database/schema.sql   
+
+##  Screenshots
 <img width="751" height="807" alt="Image" src="https://github.com/user-attachments/assets/827d3c45-7243-48d5-bfff-3afad04b433f" />
 <img width="753" height="584" alt="image" src="https://github.com/user-attachments/assets/572c8545-919b-40c7-8d59-efe5ca138fea" />
 <img width="1890" height="776" alt="Image" src="https://github.com/user-attachments/assets/30095bad-713e-44c3-9efb-243b0124f99a" />
