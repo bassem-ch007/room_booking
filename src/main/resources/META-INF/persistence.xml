@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    
+    <persistence-unit name="room-booking-pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <!-- Entités JPA -->
+        <class>com.roombooking.entity.User</class>
+        <class>com.roombooking.entity.Room</class>
+        <class>com.roombooking.entity.Reservation</class>
+
+        <properties>
+            <!-- PostgreSQL Driver -->
+            <property name="jakarta.persistence.jdbc.driver" 
+                      value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" 
+                      value="jdbc:postgresql://localhost:5432/room_booking"/>
+            <property name="jakarta.persistence.jdbc.user" 
+                      value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" 
+                      value="postgres"/>
+            
+            <!-- Hibernate Configuration -->
+            <property name="hibernate.dialect" 
+                      value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.default_schema" value="public"/>
+            <!-- Pool Connexions -->
+            <property name="hibernate.connection.pool_size" value="10"/>
+            
+            <!-- Encoding -->
+            <property name="hibernate.connection.characterEncoding" value="UTF-8"/>
+            <property name="hibernate.connection.useUnicode" value="true"/>
+        </properties>
+    </persistence-unit>
+    
+</persistence>
+
