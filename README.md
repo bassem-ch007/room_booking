@@ -2,14 +2,6 @@
 
 ##  Schéma Base de Données
 roombooking/
-├── src/
-│   └── main/
-│       └── resources/
-│           └── database/
-│               └── schema.sql    ← ICI
-├── README.md
-├── pom.xml
-├── .gitignore
-├── web/
-└── ...
+├── src/main/resources/database/schema.sql    ← ICI
+
 
